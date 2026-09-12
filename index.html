@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Code Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <header>
+    <h1>🤖 AI CODE GENERATOR</h1>
+    <p>Ketik prompt, dapet kode langsung</p>
+  </header>
+
+  <div class="input-box">
+    <textarea id="prompt" placeholder="Contoh: Buatkan bot telegram auto reply..."></textarea>
+    <select id="bahasa">
+      <option>JavaScript</option>
+      <option>Python</option>
+      <option>HTML/CSS</option>
+      <option>PHP</option>
+      <option>Java</option>
+      <option>Node.js</option>
+      <option>Bash</option>
+    </select>
+    <button onclick="generate()">🚀 GENERATE</button>
+  </div>
+
+  <div class="output" id="output" style="display:none;">
+    <div class="output-header">
+      <span>📄 HASIL</span>
+      <button onclick="copyKode()">📋 COPY</button>
+    </div>
+    <pre id="kode"></pre>
+  </div>
+
+  <div class="loading" id="loading" style="display:none;">
+    <div class="spinner"></div>
+    <p>NOVA_TERMINAL sedang bekerja...</p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
